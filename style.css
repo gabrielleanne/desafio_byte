@@ -1,72 +1,93 @@
-*{
+html,body{
+    height: 100vh;
     padding:0;
     margin:0;
-    box-sizing: border-box;
+    font: 16px;
 }
 
-.all{
-
-    background-color: blueviolet;
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 3, 119);
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
 }
-   
-.img img{
-    width: 20%;
-    border-radius: 50%;
-    position: absolute;
-    margin-top: 12%;
-    margin-left: 11%;
-}
-.info{
-    position: absolute;
-    top:30%;
-    left: 33%;
-    transform: translateY (-50%);
+
+.container{
+    max-width: 1444px;
+    margin: auto 0;
+    color: rgb(231, 73, 112);
 }
 
-.info span{
+.box-profile{
+    padding: 80px 120px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+   
+.img{
+    background-image: url("./fotov.jpeg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.info{
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+}
+
+strong{
     color: pink;
 }
 
-h4{
-    color: black;
-    letter-spacing: 3px;
-    font-size: 20px;;
-}
-
 h1{
-    color: black;
-    margin: 20px 0px 20px;
-    font-size: 75px;
-}
-
-h3{
-    color: black;
-    font-size: 25px;
-    margin: 20px 0px 20px;
-}
-
-p{
-    color: black;
-    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 h2{
-    color: black;
-    font-size: 25px;
-    margin: 20px 0px 20px;
+    max-width: 400px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
-.link{
-    color: black;
-    font-size: 120%;
+h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    color: pink;
+}
+
+a{
+    color: pink;
+    font-size: 1rem;
     text-decoration: none;
-    position: absolute;
-    top:75%;
-    left: 33%;
-    transform: translateY (-50%);
+    font-weight: 300;
 }
-
